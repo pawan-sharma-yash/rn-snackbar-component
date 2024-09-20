@@ -114,7 +114,7 @@ class Snackbar extends Component {
             },
             containerStyle,
           ]}
-          onLayout={this.handleLayoutChange}
+          onLayout={this.handleLayoutChange.bind(this)}
         >
           {String(message) === message ? (
             <Text style={[styles.text_msg, messageStyle]}>
